@@ -27,3 +27,4 @@ https://askubuntu.com/questions/765526/how-to-install-gtk2-0/839609
 https://stackoverflow.com/questions/24955686/gtk-gtk-h-not-found-on-ubuntu-c
 https://www.youtube.com/watch?v=I1bho9kMd08&list=PL6A4216D6C8E00CFC&index=2
 https://www.youtube.com/playlist?list=PL6A4216D6C8E00CFC
+
