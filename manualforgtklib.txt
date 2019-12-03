@@ -1,18 +1,27 @@
-sudo apt-get install build-essential libgtk2.0-dev
-sudo apt-get install libgtk2.0-dev
+After a lot of research and reading, found the "only-way" to build, compile and run c with gui using gtk lib.
+The installation works only on Linux, couldn't figure out a way to make it work on MacOS and Unix systems.
+So follow the instructions and... crossed fingers, it's going to work!
+:D
+Cheers
+
+~Open terminal
+~Being on Home directory type the followings
+
+$ sudo apt-get install build-essential libgtk2.0-dev
+$ sudo apt-get install libgtk2.0-dev
 
 
-pkg-config --cflags --libs gtk+-2.0
-pkg-config --libs --cflags glib-2.0
+$ pkg-config --cflags --libs gtk+-2.0
+$ pkg-config --libs --cflags glib-2.0
 
 
 ~You are going to build and compile the .c code with g++
 
-g++ fist.cpp `pkg-config --cflags --libs gtk+-2.0`
-./a.out
+$ g++ fist.cpp `pkg-config --cflags --libs gtk+-2.0`
+$ ./a.out
 
 
-~Usefull Links
+~Other usefull Links
 
 https://askubuntu.com/questions/765526/how-to-install-gtk2-0/839609
 https://stackoverflow.com/questions/24955686/gtk-gtk-h-not-found-on-ubuntu-c
