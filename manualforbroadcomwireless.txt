@@ -1,0 +1,23 @@
+sudo apt-get install wireless-tools
+
+sudo apt-get install network-manager-gnome
+
+sudo apt-get install wpasupplicant
+
+sudo vim /etc/apt/sources.list
+
+Add: "contrib non-free"
+
+apt-get update
+apt-get dist-upgrade
+reboot
+
+sudo apt-get install linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') broadcom-sta-dkms
+
+
+sudo modprobe -r b44 b43 b43l3gacy ssb bcma
+sudo modprobe -r b44 b43 b43legacy ssb bcma
+sudo modprobe wl
+reboot
+
+
