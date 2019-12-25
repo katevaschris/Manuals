@@ -1,0 +1,26 @@
+~Tested on:
+	c@c:~$ cat /etc/*-release
+	PRETTY_NAME="Debian GNU/Linux 10 (buster)"
+	NAME="Debian GNU/Linux"
+	VERSION_ID="10"
+	VERSION="10 (buster)"
+	VERSION_CODENAME=buster
+	ID=debian
+	HOME_URL="https://www.debian.org/"
+	SUPPORT_URL="https://www.debian.org/support"
+	BUG_REPORT_URL="https://bugs.debian.org/"
+	
+	c@c:~$ uname -a
+	Linux c 4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11) x86_64 GNU/Linux	
+
+
+~In case you do not have pthread lbrary you must install the following :
+
+c@c:~$  sudo apt-get install libpthread-stubs0-dev
+
+~How to compile it (ex. folder os located on Home Directory):
+
+c@c:~$ cd os
+c@c:~$ gcc *.c *.h -lpthread
+c@c:~$ ./a.out
+
