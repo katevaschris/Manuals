@@ -1,10 +1,3 @@
-After a lot of research and reading, found the "only-way" to build, compile and run c with gui using gtk lib.
-The installation works only on Linux, couldn't figure out a way to make it work on MacOS and Unix systems.
-So follow the instructions and... crossed fingers, it's going to work!
-:D
-Cheers
-
-~Open terminal
 ~Being on Home directory type the followings
 
 $ sudo apt-get install build-essential libgtk2.0-dev
